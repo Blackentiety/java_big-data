@@ -10,4 +10,12 @@ public class SystemBoot {
             return false;
         }
     }
+
+    public void afficherEtapes() {
+        String[] etapes = {"Initialisation", "Connexion DB", "Nettoyage", "Export"};
+        System.out.println("Lancement du protocole Nexus...");
+        for (String etape : etapes) {
+            System.out.println("[ETAPE] : " + etape + " en cours...");
+        }
+    }
 }
